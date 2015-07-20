@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="VMBuilder.Control.CircleContainer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <SolidColorBrush x:Key="InitColor" Color="#83C183"/>
+        <SolidColorBrush x:Key="MouseOverColor" Color="#2A7B2A"/>
+    </UserControl.Resources>
+    <Grid x:Name="MainGrid" Background="Transparent">
+        <Ellipse Effect="{StaticResource z-depth4}" x:Name="Circle">
+            <Ellipse.Style>
+                <Style TargetType="Ellipse" x:Name="CircleStyle">
+                    <Setter x:Name="InitValue" Property="Fill" Value="{DynamicResource InitColor}"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding ElementName=MainGrid, Path=IsMouseOver}" Value="True">
+                            <Setter x:Name="MouseOverValue" Property="Fill" Value="{DynamicResource MouseOverColor}" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Ellipse.Style>
+        </Ellipse>
+        <Image x:Name="Image" Width="25" Height="25" IsEnabled="False" Focusable="False"/>
+    </Grid>
+</UserControl>

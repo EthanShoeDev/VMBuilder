@@ -1,0 +1,122 @@
+﻿<Window x:Class="VMBuilder.Views.Windows.Home"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VMBuilder.Views.Windows"
+        xmlns:screens="clr-namespace:VMBuilder.Views"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        xmlns:controls="clr-namespace:VMBuilder.Control"
+        xmlns:vm="clr-namespace:VMBuilder.ViewModel"
+        mc:Ignorable="d"
+        Title="Home" Height="750" Width="620">
+    <Window.DataContext>
+        <vm:HomeViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="233*"/>
+            <ColumnDefinition Width="379*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="85*"/>
+            <RowDefinition Height="575*"/>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="60*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Grid.ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <!--This is just here to give a color gradient-->
+                <RowDefinition Height="13*"/>
+                <RowDefinition Height="72*"/>
+            </Grid.RowDefinitions>
+            <Border Grid.Row="0" Background="#529E52" />
+            <Border Grid.Row="1" Background="#83C183" Effect="{StaticResource z-depth1}">
+                <Grid>
+                    <Label Content="VMBuilder" Style="{DynamicResource Roboto}"  VerticalAlignment="Center" FontSize="35" Foreground="White"/>
+                </Grid>
+            </Border>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <WrapPanel Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Label Content="Class Name:" FontSize="20" FontWeight="Bold">
+                    <Label.Style>
+                        <Style TargetType="Label">
+                            <Setter Property="Foreground" Value="Black"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding ElementName=boxClassName, Path=Text}" Value="">
+                                    <Setter Property="Foreground" Value="Gray"></Setter>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <TextBox x:Name="boxClassName" MinWidth="80" Height="30" Text="{Binding ClassName}"/>
+            </WrapPanel>
+            <WrapPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Label Content="Properties:" FontSize="20" FontWeight="Bold"/>
+                <TextBox x:Name="boxProperties" MinWidth="80" Height="30" Text="{Binding Properties, UpdateSourceTrigger=PropertyChanged}">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="GotKeyboardFocus">
+                            <i:InvokeCommandAction Command="{Binding TextBoxGotFocus}" CommandParameter="1"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </TextBox>
+            </WrapPanel>
+            <WrapPanel Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Label Content="Delegates:" FontSize="20" FontWeight="Bold"/>
+                <TextBox x:Name="boxDelegates" MinWidth="80" Height="30" Text="{Binding Delegates, UpdateSourceTrigger=PropertyChanged}">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="GotKeyboardFocus">
+                            <i:InvokeCommandAction Command="{Binding TextBoxGotFocus}" CommandParameter="2"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </TextBox>
+            </WrapPanel>
+            <WrapPanel Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Label Content="Constructors:" FontSize="20" FontWeight="Bold"/>
+                <TextBox x:Name="boxConstructors" MinWidth="80" Height="30" Text="{Binding Constructors, UpdateSourceTrigger=PropertyChanged}">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="GotKeyboardFocus">
+                            <i:InvokeCommandAction Command="{Binding TextBoxGotFocus}" CommandParameter="3"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </TextBox>
+            </WrapPanel>
+        </Grid>
+        <ContentControl Grid.Column="1" Grid.Row="1">
+            <ContentControl.Style>
+                <Style TargetType="ContentControl">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding ScreenIndex}" Value="1">
+                            <Setter Property="Content" Value="{Binding PropertiesScreen}"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ScreenIndex}" Value="2">
+                            <Setter Property="Content" Value="{Binding DelegateScreen}"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ScreenIndex}" Value="3">
+                            <Setter Property="Content" Value="{Binding ConstructorScreen}"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </ContentControl.Style>
+        </ContentControl>
+        <Border Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Background="#83C183" Effect="{StaticResource topShadow}"/>
+        <controls:CircleContainer Grid.Column="0" Height="85" Width="85" Grid.Row="2" Grid.RowSpan="2" HorizontalAlignment="Left" Margin="10,5,5,5" InitialColor="#00BFF3" img="../../Resources/ExitButton.png" ImgSize="45" MouseOverColor="#023E4F">
+            <controls:CircleContainer.InputBindings>
+                <MouseBinding MouseAction="LeftClick" Command="{Binding ClearButtonClicked}"></MouseBinding>
+            </controls:CircleContainer.InputBindings>
+        </controls:CircleContainer>
+        <controls:CircleContainer Grid.Column="1" Height="85" Width="85" Grid.Row="2" Grid.RowSpan="2" HorizontalAlignment="Right" Margin="10,5,5,5" InitialColor="#00BFF3" img="../../Resources/WhiteCheck.png" ImgSize="55" MouseOverColor="#023E4F">
+            <controls:CircleContainer.InputBindings>
+                <MouseBinding MouseAction="LeftClick" Command="{Binding GenerateButtonClicked}"/>
+            </controls:CircleContainer.InputBindings>
+        </controls:CircleContainer>
+    </Grid>
+</Window>
