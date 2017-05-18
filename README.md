@@ -7,5 +7,5 @@ you create should inherit from a ViewModelBase and the Base should use the INoti
 The delegate section is used by adding a DelegateCommand class somewhere in your solution.
 
 
-All of the above makes absolutly no sense and you just want to start with mvvm copy the code out of ViewModelBase and DelegateCommand from
+If all of the above makes no sense and you just want to start with mvvm copy the code out of ViewModelBase and DelegateCommand from
 this solution. Make two class files somewhere in your solution and paste the code into each respectively.
