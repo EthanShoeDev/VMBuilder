@@ -1,0 +1,20 @@
+﻿VMBuilder
+
+
+winexe
+C#
+.cs
+C:\Users\ethan\documents\visual studio 2017\Projects\VMBuilder\VMBuilder\obj\Debug\
+VMBuilder
+none
+false
+DEBUG;TRACE
+C:\Users\ethan\documents\visual studio 2017\Projects\VMBuilder\VMBuilder\App.xaml
+10544449773
+
+25459271225
+151994001980
+Control\CircleContainer.xaml;Resources\MainResourceDic.xaml;Views\ConstructorScreen.xaml;Views\Controls\ConstructorUC.xaml;Views\Controls\DelegateUC.xaml;Views\Controls\PropertyUC.xaml;Views\DelegateScreen.xaml;Views\PropertiesScreen.xaml;Views\Windows\CodeView.xaml;Views\Windows\Home.xaml;
+
+False
+

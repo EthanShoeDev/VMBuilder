@@ -11,7 +11,7 @@ using VMBuilder.Views;
 
 namespace VMBuilder.ViewModel
 {
-    class HomeViewModel : Classes.ViewModelBase
+    public class HomeViewModel : Classes.ViewModelBase
     {
         private string _ClassName = string.Empty;
         private string _Properties = string.Empty;

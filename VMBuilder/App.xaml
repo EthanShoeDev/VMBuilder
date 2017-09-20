@@ -15,4 +15,5 @@
         <DropShadowEffect x:Key="z-depth4" BlurRadius="25" ShadowDepth="8" Direction="270" Color="#BBBBBB"/>
         <DropShadowEffect x:Key="z-depth5" BlurRadius="35" ShadowDepth="13" Direction="270" Color="#BBBBBB"/>
     </Application.Resources>
-</Application>
+ </Application>
+
