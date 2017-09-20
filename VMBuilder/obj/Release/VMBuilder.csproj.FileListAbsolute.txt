@@ -35,3 +35,40 @@ C:\Users\ethan\documents\visual studio 2017\Projects\VMBuilder\VMBuilder\obj\Rel
 C:\Users\ethan\documents\visual studio 2017\Projects\VMBuilder\VMBuilder\obj\Release\VMBuilder.csproj.CoreCompileInputs.cache
 C:\Users\ethan\documents\visual studio 2017\Projects\VMBuilder\VMBuilder\obj\Release\VMBuilder.exe
 C:\Users\ethan\documents\visual studio 2017\Projects\VMBuilder\VMBuilder\obj\Release\VMBuilder.pdb
+R:\Code\VS 2017\VMBuilder\VMBuilder\bin\Release\VMBuilder.exe.config
+R:\Code\VS 2017\VMBuilder\VMBuilder\bin\Release\VMBuilder.exe
+R:\Code\VS 2017\VMBuilder\VMBuilder\bin\Release\VMBuilder.pdb
+R:\Code\VS 2017\VMBuilder\VMBuilder\bin\Release\Microsoft.Expression.Interactions.dll
+R:\Code\VS 2017\VMBuilder\VMBuilder\bin\Release\System.Windows.Interactivity.dll
+R:\Code\VS 2017\VMBuilder\VMBuilder\bin\Release\Microsoft.Expression.Interactions.xml
+R:\Code\VS 2017\VMBuilder\VMBuilder\bin\Release\System.Windows.Interactivity.xml
+R:\Code\VS 2017\VMBuilder\VMBuilder\obj\Release\Control\CircleContainer.baml
+R:\Code\VS 2017\VMBuilder\VMBuilder\obj\Release\Resources\MainResourceDic.baml
+R:\Code\VS 2017\VMBuilder\VMBuilder\obj\Release\Control\CircleContainer.g.cs
+R:\Code\VS 2017\VMBuilder\VMBuilder\obj\Release\Views\ConstructorScreen.g.cs
+R:\Code\VS 2017\VMBuilder\VMBuilder\obj\Release\Views\Controls\ConstructorUC.g.cs
+R:\Code\VS 2017\VMBuilder\VMBuilder\obj\Release\Views\Controls\DelegateUC.g.cs
+R:\Code\VS 2017\VMBuilder\VMBuilder\obj\Release\Views\Controls\PropertyUC.g.cs
+R:\Code\VS 2017\VMBuilder\VMBuilder\obj\Release\Views\DelegateScreen.g.cs
+R:\Code\VS 2017\VMBuilder\VMBuilder\obj\Release\Views\PropertiesScreen.g.cs
+R:\Code\VS 2017\VMBuilder\VMBuilder\obj\Release\Views\Windows\CodeView.g.cs
+R:\Code\VS 2017\VMBuilder\VMBuilder\obj\Release\Views\Windows\Home.g.cs
+R:\Code\VS 2017\VMBuilder\VMBuilder\obj\Release\App.g.cs
+R:\Code\VS 2017\VMBuilder\VMBuilder\obj\Release\GeneratedInternalTypeHelper.g.cs
+R:\Code\VS 2017\VMBuilder\VMBuilder\obj\Release\VMBuilder_MarkupCompile.cache
+R:\Code\VS 2017\VMBuilder\VMBuilder\obj\Release\VMBuilder_MarkupCompile.lref
+R:\Code\VS 2017\VMBuilder\VMBuilder\obj\Release\App.baml
+R:\Code\VS 2017\VMBuilder\VMBuilder\obj\Release\Views\ConstructorScreen.baml
+R:\Code\VS 2017\VMBuilder\VMBuilder\obj\Release\Views\Controls\ConstructorUC.baml
+R:\Code\VS 2017\VMBuilder\VMBuilder\obj\Release\Views\Controls\DelegateUC.baml
+R:\Code\VS 2017\VMBuilder\VMBuilder\obj\Release\Views\Controls\PropertyUC.baml
+R:\Code\VS 2017\VMBuilder\VMBuilder\obj\Release\Views\DelegateScreen.baml
+R:\Code\VS 2017\VMBuilder\VMBuilder\obj\Release\Views\PropertiesScreen.baml
+R:\Code\VS 2017\VMBuilder\VMBuilder\obj\Release\Views\Windows\CodeView.baml
+R:\Code\VS 2017\VMBuilder\VMBuilder\obj\Release\Views\Windows\Home.baml
+R:\Code\VS 2017\VMBuilder\VMBuilder\obj\Release\VMBuilder.g.resources
+R:\Code\VS 2017\VMBuilder\VMBuilder\obj\Release\VMBuilder.Properties.Resources.resources
+R:\Code\VS 2017\VMBuilder\VMBuilder\obj\Release\VMBuilder.csproj.GenerateResource.Cache
+R:\Code\VS 2017\VMBuilder\VMBuilder\obj\Release\VMBuilder.csproj.CoreCompileInputs.cache
+R:\Code\VS 2017\VMBuilder\VMBuilder\obj\Release\VMBuilder.exe
+R:\Code\VS 2017\VMBuilder\VMBuilder\obj\Release\VMBuilder.pdb
