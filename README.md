@@ -1,5 +1,5 @@
 # VMBuilder
-This is a Dev Tool that helps create ViewModels faster in wpf when using the mvvm pattern. Your welcome to change syntax in the solution but right now it is setup so that the ViewModel you create should inherit from a ViewModelBase and the Base should use the INotifyChanged interface.
+This is a Dev Tool that helps create ViewModels faster in WPF when using the mvvm pattern. Your welcome to change syntax in the solution but right now it is setup so that the ViewModel you create should inherit from a ViewModelBase and the Base should use the INotifyChanged interface.
 
 The delegate section is used by adding a DelegateCommand class somewhere in your solution.
 
